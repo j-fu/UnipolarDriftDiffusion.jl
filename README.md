@@ -1,21 +1,11 @@
----
-title: UnipolarDriftDiffusion.jl
-author: J. Fuhrmann
-geometry: margin=1in
-documentclass: scrartcl
-fontsize: 10pt
-fontfamily: roboto
-mainfont: Roboto
-monofont: Roboto Mono
-secnumdepth: 2
-...
-
 # Introduction
 
 `UnipolarDriftDiffusion.jl` provides numerical examples for finite volume schemes
  for the paper "A numerical analysis focused comparison of several Finite Volume schemes for an
  Unipolar Degenerated Drift-Diffusion Model"
  by C.  Cancès, C. Chainais-Hilliaret, J. Fuhrmann, B. Gaudeul (submitted)
+
+It uses the finite volume solver (VoronoiFVM.jl)[https://github.com/j-fu/VoronoiFVM.jl]
 
 ## Usage
 
@@ -1194,7 +1184,7 @@ end
 ```julia
 function makepdf()
     Literate.markdown("UnipolarDriftDiffusion.jl", ".",documenter=false)
-    run(`pandoc UnipolarDriftDiffusion.md -t latex --number-sections --toc  --highlight-style tango --pdf-engine=xelatex -o UnipolarDriftDiffusion.pdf`)
+    run(`pandoc UnipolarDriftDiffusion.md -t latex --metadata-file=header.yaml --number-sections --toc  --highlight-style tango --pdf-engine=xelatex -o UnipolarDriftDiffusion.pdf`)
 end
 ```
 

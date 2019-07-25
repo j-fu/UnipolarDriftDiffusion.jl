@@ -5,6 +5,9 @@
 #  Unipolar Degenerated Drift-Diffusion Model"
 #  by C.  Cancès, C. Chainais-Hilliaret, J. Fuhrmann, B. Gaudeul (submitted)
 #
+# It uses the finite volume solver (VoronoiFVM.jl)[https://github.com/j-fu/VoronoiFVM.jl]
+#
+
 # ## Usage
 #
 # For generating the  figures, perform
