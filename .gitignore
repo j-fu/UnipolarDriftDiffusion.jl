@@ -1,0 +1,4 @@
+*.pdf
+*.jld2
+*.dat
+startup.jl
